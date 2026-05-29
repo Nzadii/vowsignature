@@ -176,3 +176,15 @@ footer a {
     grid-template-columns: 1fr;
   }
 }
+
+/* PORTFOLIO PAGE */
+.portfolio-section {
+  padding: 20px 8% 50px;
+}
+
+.portfolio-section h2 {
+  text-align: center;
+  color: #8b5e5e;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
