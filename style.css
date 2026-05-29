@@ -215,3 +215,20 @@ footer a {
   margin: auto;
   color: #666;
 }
+
+/* SECTION TITLES */
+
+.section-title {
+  text-align: center;
+  color: #8b5e5e;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* CONTENT CONTAINER */
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
