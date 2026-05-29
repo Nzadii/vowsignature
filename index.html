@@ -3,12 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vow signature Weddings</title>
+    <title>Vow Signature Weddings</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <img src="image/vowlogo .png" width="300" alt="Photo">
     <header>
+      <img src="image/vowlogo .png" class="logo" alt="Logo" />
+
       <h1>Vow Signature Weddings</h1>
+
       <nav>
         <a href="index.html">Home</a>
         <a href="portfolio.html">Portfolio</a>
@@ -19,146 +23,118 @@
       </nav>
     </header>
 
-
-    <section>
+    <section class="hero">
       <h2>Welcome to Vow Signature Weddings</h2>
+
       <p>
         Documenting your journey in love, from intimate beginnings to your most
         cherished day.
       </p>
-
-      <table width="100%" cellpadding="20">
-        <tr align="center">
-          <!-- LEFT SIDE: PORTFOLIO -->
-          <td>
-            <img src="image/portfolio.jpg" width="300" />
-
-            <br /><br />
-
-            <a href="">
-              <button>Portfolio</button>
-            </a>
-          </td>
-
-          <!-- RIGHT SIDE: GET QUOTE -->
-          <td>
-            <img src="image/Quote.jpg" alt="Get Quote" width="300" />
-
-            <br /><br />
-
-            <a href="">
-              <button>Get Quote</button>
-            </a>
-          </td>
-        </tr>
-      </table>
     </section>
 
+    <!-- CARDS -->
+    <div class="card-container">
+      <div class="card">
+        <img src="image/portfolio.jpg" alt="Portfolio" />
 
+        <br /><br />
 
+        <a href="portfolio.html">
+          <button>Portfolio</button>
+        </a>
+      </div>
 
-    <h3>Featured Photo</h3>
+      <div class="card">
+        <img src="image/Quote.jpg" alt="Quote" />
 
-        <img src="image/wed2.jpg" alt="Featured Photo" width="100%" style="max-width:600px; border-radius:10px;">
-<img src="image/wed1.jpg" alt="Featured Photo" width="100%" style="max-width:600px; border-radius:10px;">
+        <br /><br />
 
-<img src="image/wed4.jpg" alt="Featured Photo" width="100%" style="max-width:600px; border-radius:10px;">
+        <a href="quotation.html">
+          <button>Get Quote</button>
+        </a>
+      </div>
+    </div>
 
-<img src="image/wed5.jpg" alt="Featured Photo" width="100%" style="max-width:600px; border-radius:10px;">
+    <!-- FEATURED PHOTOS -->
+    <section>
+      <h2 style="text-align: center">Featured Weddings</h2>
 
+      <div class="gallery">
+        <img src="image/wed2.jpg" alt="" />
+        <img src="image/wed1.jpg" alt="" />
+        <img src="image/wed4.jpg" alt="" />
+        <img src="image/wed5.jpg" alt="" />
+      </div>
 
-        <a href="portfolio.html"><button>View Portfolio</button></a>
+      <div style="text-align: center">
+        <a href="portfolio.html">
+          <button>View Portfolio</button>
+        </a>
+      </div>
     </section>
-    
-  
 
+    <!-- ABOUT -->
+    <section class="hero">
+      <h2>Our Story</h2>
 
-    <p>
-      Vow Signature Weddings is a passionate photography brand founded in 2025 by Nzadi D,
-       dedicated to capturing the most meaningful moments of a couple’s journey. 
-       From the excitement of engagement shoots to the beauty of the wedding day
-    </p>
-    
-    <a href="about.html">
+      <p>
+        Vow Signature Weddings is a passionate photography brand founded in 2025
+        by Nzadi D, dedicated to capturing meaningful moments of a couple’s
+        journey.
+      </p>
+
+      <br />
+
+      <a href="about.html">
         <button>Read More</button>
-    </a>
+      </a>
+    </section>
 
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+      <h2 style="text-align: center">Testimonials</h2>
 
+      <div class="testimonial-box">
+        <img src="image/coupleA.jpg" alt="" />
+        <div>
+          <p>
+            "They didn’t just take photos — they captured our story perfectly."
+          </p>
+          <strong>- Sarah & John</strong>
+        </div>
+      </div>
 
+      <div class="testimonial-box">
+        <img src="image/coupleB.jpg" alt="" />
+        <div>
+          <p>
+            "Every picture feels alive. We relive our wedding day every time we
+            look at them."
+          </p>
+          <strong>- Amanda & Chris</strong>
+        </div>
+      </div>
 
-<!-- TESTIMONIAL SECTION -->
-
-<h2>Testimonials</h2>
-
-<table cellpadding="15">
-
-    <!-- TESTIMONIAL 1 -->
-    <tr>
-        <td>
-            <img src="image/coupleA.jpg" alt="Client 1" width="80">
-        </td>
-        <td>
-            <p>
-              "They didn’t just take photos — they captured our story perfectly."
-
-            </p>
-            <p><strong>- Sarah & John</strong></p>
-        </td>
-    </tr>
-
-    <!-- TESTIMONIAL 2 -->
-    <tr>
-        <td>
-            <img src="image/coupleB.jpg" alt="Client 2" width="80">
-        </td>
-        <td>
-            <p>
-              "Every picture feels alive. We relive our wedding day every time we look at them."
-            </p>
-            <p><strong>- Amanda & Chris</strong></p>
-        </td>
-    </tr>
-
-    <!-- TESTIMONIAL 3 -->
-    <tr>
-        <td>
-            <img src="image/coupleD.jpg" alt="Client 3" width="80">
-        </td>
-        <td>
-            <p>
-                
-"Professional, creative, and truly unforgettable. The best decision we made!"
-            </p>
-            <p><strong>- Lisa & Mark</strong></p>
-        </td>
-    </tr>
-
-</table>
-
-
-
-
-
-
+      <div class="testimonial-box">
+        <img src="image/coupleD.jpg" alt="" />
+        <div>
+          <p>"Professional, creative, and unforgettable."</p>
+          <strong>- Lisa & Mark</strong>
+        </div>
+      </div>
+    </section>
 
     <footer>
-      <!-- CONTACT INFO -->
       <h3>Contact Us</h3>
       <p>Email: info@vowsignatureweddings.com</p>
       <p>Phone: +27 66 051 14 61</p>
 
-      <br />
-
-      <!-- SOCIAL MEDIA -->
       <h3>Follow Us</h3>
-      <a href="https://instagram.com" target="_blank">Instagram</a> |
-      <a href="https://facebook.com" target="_blank">Facebook</a> |
-      <a href="https://twitter.com" target="_blank">Twitter</a>
 
-      <br /><br />
+      <a href="#">Instagram</a> | <a href="#">Facebook</a> |
+      <a href="#">Twitter</a>
 
-      <!-- COPYRIGHT -->
-      <p>&copy; 2026 Vow Signature Weddings. All rights reserved.</p>
+      <p>&copy; 2026 Vow Signature Weddings</p>
     </footer>
   </body>
 </html>
