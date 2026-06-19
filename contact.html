@@ -42,21 +42,57 @@
     </section>
 
     <!-- CONTACT FORM -->
-    <section class="contact-section">
-      <div class="contact-card">
-        <h3>Send Us a Message</h3>
 
-        <form id="contactForm">
-          <input type="text" placeholder="Your Name" required />
+    <form id="contactForm">
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Full Name"
+        required
+      />
 
-          <input type="email" placeholder="Your Email" required />
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Email Address"
+        required
+      />
 
-          <textarea placeholder="Your Message" rows="6"></textarea>
+      <input
+        type="tel"
+        id="phone"
+        name="phone"
+        placeholder="Phone Number"
+        required
+      />
 
-          <button type="submit">Send Message</button>
-        </form>
-      </div>
-    </section>
+      <select id="subject" name="subject" required>
+        <option value="">Select Subject</option>
+
+        <option value="booking">Wedding Booking</option>
+
+        <option value="quotation">Quotation Request</option>
+
+        <option value="general">General Enquiry</option>
+      </select>
+
+      <textarea
+        id="message"
+        name="message"
+        rows="6"
+        placeholder="Your Message"
+        required
+      ></textarea>
+
+      <label>
+        <input type="checkbox" id="terms" required />
+        I agree to be contacted by Vow Signature Weddings
+      </label>
+
+      <button type="submit">Send Message</button>
+    </form>
 
     <!-- CONTACT DETAILS -->
     <section class="contact-section">
