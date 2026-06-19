@@ -319,9 +319,19 @@ footer a {
   font-size: 2.5rem;
   margin-bottom: 15px;
 }
+
 .contact-hero {
   text-align: center;
   padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.contact-hero p {
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
+  font-size: 1.1rem;
 }
 
 .contact-section {
