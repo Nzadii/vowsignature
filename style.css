@@ -326,9 +326,8 @@ footer a {
 
 .contact-section {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  align-items: center;
   padding: 40px 20px;
 }
 

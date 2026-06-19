@@ -42,39 +42,40 @@
     </section>
 
     <!-- CONTACT FORM -->
+    <section class="contact-section">
+      <div class="contact-card">
+        <h3>Send Us a Message</h3>
 
-    <div class="contact-card">
-      <h3>Send Us a Message</h3>
+        <form id="contactForm">
+          <input type="text" id="name" placeholder="Full Name" required />
 
-      <form id="contactForm">
-        <input type="text" id="name" placeholder="Full Name" required />
+          <input type="email" id="email" placeholder="Email Address" required />
 
-        <input type="email" id="email" placeholder="Email Address" required />
+          <input type="tel" id="phone" placeholder="Phone Number" required />
 
-        <input type="tel" id="phone" placeholder="Phone Number" required />
+          <select id="subject" required>
+            <option value="">Select Subject</option>
+            <option value="booking">Wedding Booking</option>
+            <option value="quotation">Quotation Request</option>
+            <option value="general">General Enquiry</option>
+          </select>
 
-        <select id="subject" required>
-          <option value="">Select Subject</option>
-          <option value="booking">Wedding Booking</option>
-          <option value="quotation">Quotation Request</option>
-          <option value="general">General Enquiry</option>
-        </select>
+          <textarea
+            id="message"
+            rows="6"
+            placeholder="Your Message"
+            required
+          ></textarea>
 
-        <textarea
-          id="message"
-          rows="6"
-          placeholder="Your Message"
-          required
-        ></textarea>
+          <label>
+            <input type="checkbox" id="terms" required />
+            I agree to be contacted by Vow Signature Weddings
+          </label>
 
-        <label>
-          <input type="checkbox" id="terms" required />
-          I agree to be contacted by Vow Signature Weddings
-        </label>
-
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
 
     <!-- CONTACT DETAILS -->
     <section class="contact-section">
