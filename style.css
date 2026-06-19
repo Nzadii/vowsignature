@@ -453,3 +453,10 @@ footer a {
   border-radius: 12px;
   overflow: hidden;
 }
+
+#formMessage {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: green;
+}

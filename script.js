@@ -58,8 +58,15 @@ if (contactForm) {
       return;
     }
 
-    alert("Thank you! Your enquiry has been submitted.");
+    const formMessage = document.getElementById("formMessage");
 
-    contactForm.reset();
+    formMessage.textContent = "Submitting...";
+
+    setTimeout(() => {
+      formMessage.textContent =
+        "Thank you! Your enquiry has been submitted successfully.";
+
+      contactForm.reset();
+    }, 1500);
   });
 }
