@@ -160,3 +160,24 @@ if (engagementGallery) {
     `;
   });
 }
+
+// DYNAMIC BRIDAL GALLERY
+
+const bridalGallery = document.getElementById("bridalGallery");
+
+if (bridalGallery) {
+  const bridalImages = [
+    "image/bridal1.jpg",
+    "image/bridal2.jpg",
+    "image/bridal3.jpg",
+    "image/bridal4.jpg",
+  ];
+
+  bridalImages.forEach((image) => {
+    bridalGallery.innerHTML += `
+      <div class="portfolio-card" data-aos="zoom-in">
+        <img src="${image}" alt="Bridal Session">
+      </div>
+    `;
+  });
+}
