@@ -356,3 +356,13 @@ footer a {
 .contact-card button {
   cursor: pointer;
 }
+
+.contact-card select {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.contact-card label {
+  font-size: 14px;
+}
