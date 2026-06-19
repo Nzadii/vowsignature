@@ -462,8 +462,9 @@ footer a {
 }
 
 /* LIGHTBOX */
+/* LIGHTBOX */
 
-.lightbox {
+#lightbox {
   display: none;
 
   position: fixed;
@@ -482,14 +483,14 @@ footer a {
   z-index: 9999;
 }
 
-.lightbox img {
+#lightbox-img {
   max-width: 90%;
   max-height: 85%;
 
   border-radius: 10px;
 }
 
-.close {
+#close-lightbox {
   position: absolute;
 
   top: 20px;
@@ -499,5 +500,14 @@ footer a {
 
   font-size: 40px;
 
+  cursor: pointer;
+}
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  color: white;
+  font-size: 40px;
   cursor: pointer;
 }

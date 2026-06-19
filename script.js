@@ -73,13 +73,15 @@ if (contactForm) {
 
 // LIGHTBOX GALLERY
 
-const galleryImages = document.querySelectorAll(".gallery-img");
+const galleryImages = document.querySelectorAll(
+  ".gallery-img, .portfolio-card img"
+);
 
 const lightbox = document.getElementById("lightbox");
 
 const lightboxImg = document.getElementById("lightbox-img");
 
-const closeBtn = document.querySelector(".close");
+const closeBtn = document.getElementById("close-lightbox");
 
 galleryImages.forEach((image) => {
   image.addEventListener("click", () => {
