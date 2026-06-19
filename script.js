@@ -181,3 +181,26 @@ if (bridalGallery) {
     `;
   });
 }
+
+// DYNAMIC PROPOSAL GALLERY
+
+const proposalGallery = document.getElementById("proposalGallery");
+
+if (proposalGallery) {
+  const proposalImages = [
+    "image/proposal/proposal1.jpg",
+    "image/proposal/proposal2.jpg",
+    "image/proposal/proposal3.jpg",
+    "image/proposal/proposal4.jpg",
+    "image/proposal/proposal5.jpg",
+    "image/proposal/proposal6.jpg",
+  ];
+
+  proposalImages.forEach((image) => {
+    proposalGallery.innerHTML += `
+      <div class="portfolio-card" data-aos="zoom-in">
+        <img src="${image}" alt="Proposal Photography">
+      </div>
+    `;
+  });
+}
