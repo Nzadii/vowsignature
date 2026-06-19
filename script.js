@@ -140,3 +140,23 @@ if (testimonialContainer) {
     `;
   });
 }
+
+// DYNAMIC ENGAGEMENT GALLERY
+
+const engagementGallery = document.getElementById("engagementGallery");
+
+if (engagementGallery) {
+  const engagementImages = [
+    "image/eng1.jpg",
+    "image/eng2.jpg",
+    "image/eng3.jpg",
+  ];
+
+  engagementImages.forEach((image) => {
+    engagementGallery.innerHTML += `
+      <div class="portfolio-card" data-aos="zoom-in">
+        <img src="${image}" alt="Engagement Session">
+      </div>
+    `;
+  });
+}
