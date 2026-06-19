@@ -96,3 +96,8 @@ if (closeBtn) {
     lightbox.style.display = "none";
   });
 }
+
+AOS.init({
+  duration: 1000,
+  once: true,
+});

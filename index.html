@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vow Signature Weddings</title>
     <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
   </head>
 
   <body>
-    <header>
+    <header data-aos="fade-down">
       <img src="image/vowlogo .png" class="logo" alt="Logo" />
 
       <h1>Vow Signature Weddings</h1>
@@ -23,7 +25,7 @@
       </nav>
     </header>
 
-    <section class="hero">
+    <section class="hero" data-aos="fade-up">
       <h2>Welcome to Vow Signature Weddings</h2>
 
       <p>
@@ -33,7 +35,7 @@
     </section>
 
     <!-- CARDS -->
-    <div class="card-container">
+    <div class="card-container" data-aos="zoom-in">
       <div class="card">
         <img src="image/portfolio.jpg" alt="Portfolio" />
 
@@ -60,10 +62,30 @@
       <h2 style="text-align: center">Featured Weddings</h2>
 
       <div class="gallery">
-        <img src="image/wed2.jpg" alt="Wedding Photo" class="gallery-img" />
-        <img src="image/wed1.jpg" alt="Wedding Photo" class="gallery-img" />
-        <img src="image/wed4.jpg" alt="Wedding Photo" class="gallery-img" />
-        <img src="image/wed5.jpg" alt="Wedding Photo" class="gallery-img" />
+        <img
+          src="image/wed2.jpg"
+          alt="Wedding Photo"
+          class="gallery-img"
+          data-aos="zoom-in"
+        />
+        <img
+          src="image/wed1.jpg"
+          alt="Wedding Photo"
+          class="gallery-img"
+          data-aos="zoom-in"
+        />
+        <img
+          src="image/wed4.jpg"
+          alt="Wedding Photo"
+          class="gallery-img"
+          data-aos="zoom-in"
+        />
+        <img
+          src="image/wed5.jpg"
+          alt="Wedding Photo"
+          class="gallery-img"
+          data-aos="zoom-in"
+        />
       </div>
 
       <div style="text-align: center">
@@ -74,7 +96,8 @@
     </section>
 
     <!-- ABOUT -->
-    <section class="hero">
+
+    <section class="hero" data-aos="fade-up">
       <h2>Our Story</h2>
 
       <p>
@@ -94,7 +117,7 @@
     <section class="testimonials">
       <h2 style="text-align: center">Testimonials</h2>
 
-      <div class="testimonial-box">
+      <div class="testimonial-box" data-aos="zoom-in">
         <img src="image/coupleA.jpg" alt="" />
         <div>
           <p>
@@ -104,7 +127,7 @@
         </div>
       </div>
 
-      <div class="testimonial-box">
+      <div class="testimonial-box" data-aos="zoom-in">
         <img src="image/coupleB.jpg" alt="" />
         <div>
           <p>
@@ -115,7 +138,7 @@
         </div>
       </div>
 
-      <div class="testimonial-box">
+      <div class="testimonial-box" data-aos="zoom-in">
         <img src="image/coupleD.jpg" alt="" />
         <div>
           <p>"Professional, creative, and unforgettable."</p>
@@ -124,12 +147,12 @@
       </div>
     </section>
 
-    <div id="lightbox" class="lightbox">
+    <div id="lightbox" class="lightbox" data-aos="zoom-in">
       <span id="close-lightbox">&times;</span>
       <img id="lightbox-img" src="" alt="Large Image" />
     </div>
 
-    <footer>
+    <footer data-aos="zoom-in">
       <h3>Contact Us</h3>
       <p>Email: info@vowsignatureweddings.com</p>
       <p>Phone: +27 66 051 14 61</p>
@@ -141,6 +164,8 @@
 
       <p>&copy; 2026 Vow Signature Weddings</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
