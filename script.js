@@ -101,3 +101,42 @@ AOS.init({
   duration: 1000,
   once: true,
 });
+
+// DYNAMIC TESTIMONIALS
+
+const testimonialContainer = document.getElementById("testimonialContainer");
+
+if (testimonialContainer) {
+  const testimonials = [
+    {
+      image: "image/coupleA.jpg",
+      text: "They didn’t just take photos — they captured our story perfectly.",
+      author: "Sarah & John",
+    },
+
+    {
+      image: "image/coupleB.jpg",
+      text: "Every picture feels alive. We relive our wedding day every time we look at them.",
+      author: "Amanda & Chris",
+    },
+
+    {
+      image: "image/coupleD.jpg",
+      text: "Professional, creative, and unforgettable.",
+      author: "Lisa & Mark",
+    },
+  ];
+
+  testimonials.forEach((testimonial) => {
+    testimonialContainer.innerHTML += `
+      <div class="testimonial-box" data-aos="zoom-in">
+        <img src="${testimonial.image}" alt="Client Testimonial">
+
+        <div>
+          <p>"${testimonial.text}"</p>
+          <strong>- ${testimonial.author}</strong>
+        </div>
+      </div>
+    `;
+  });
+}
