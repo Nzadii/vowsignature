@@ -415,13 +415,41 @@ footer a {
   line-height: 1.8;
 }
 
+.location-card h3 {
+  color: #8b5e5e;
+  margin-bottom: 10px;
+}
+
+.location-card p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
+}
+
+/* LOCATION MAP SECTION */
+
 .location-card {
-  width: 700px;
+  width: 100%;
+  max-width: 900px;
+  margin: 50px auto;
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.location-card h3 {
+  color: #8b5e5e;
+  margin-bottom: 15px;
+}
+
+.location-card p {
+  margin-bottom: 20px;
+  font-size: 1.1rem;
 }
 
 #map {
-  height: 300px;
   width: 100%;
-  border-radius: 10px;
-  margin-top: 15px;
+  height: 400px;
+  border-radius: 12px;
+  overflow: hidden;
 }
