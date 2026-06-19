@@ -12,3 +12,54 @@ if (mapContainer) {
     .bindPopup("Vow Signature Weddings - Johannesburg")
     .openPopup();
 }
+
+// CONTACT FORM VALIDATION
+
+const contactForm = document.getElementById("contactForm");
+
+if (contactForm) {
+  contactForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const subject = document.getElementById("subject").value;
+    const message = document.getElementById("message").value.trim();
+    const terms = document.getElementById("terms").checked;
+
+    if (name.length < 3) {
+      alert("Please enter a valid full name.");
+      return;
+    }
+
+    if (!email.includes("@") || !email.includes(".")) {
+      alert("Please enter a valid email address.");
+      return;
+    }
+
+    if (phone.length < 10) {
+      alert("Please enter a valid phone number.");
+      return;
+    }
+
+    if (subject === "") {
+      alert("Please select a subject.");
+      return;
+    }
+
+    if (message.length < 10) {
+      alert("Message must be at least 10 characters.");
+      return;
+    }
+
+    if (!terms) {
+      alert("Please agree to the terms.");
+      return;
+    }
+
+    alert("Thank you! Your enquiry has been submitted.");
+
+    contactForm.reset();
+  });
+}
