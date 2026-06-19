@@ -204,3 +204,25 @@ if (proposalGallery) {
     `;
   });
 }
+
+// PORTFOLIO SEARCH
+
+const portfolioSearch = document.getElementById("portfolioSearch");
+
+if (portfolioSearch) {
+  portfolioSearch.addEventListener("keyup", () => {
+    const value = portfolioSearch.value.toLowerCase();
+
+    const sections = ["engagement", "wedding", "bridal", "proposal"];
+
+    sections.forEach((id) => {
+      const section = document.getElementById(id);
+
+      if (id.includes(value) || value === "") {
+        section.style.display = "block";
+      } else {
+        section.style.display = "none";
+      }
+    });
+  });
+}

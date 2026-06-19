@@ -538,3 +538,23 @@ footer a {
   font-size: 40px;
   cursor: pointer;
 }
+
+/* PORTFOLIO SEARCH */
+
+.search-container {
+  text-align: center;
+  margin: 30px 0;
+}
+
+#portfolioSearch {
+  width: 350px;
+  max-width: 90%;
+
+  padding: 12px 20px;
+
+  border: 1px solid #ccc;
+
+  border-radius: 30px;
+
+  font-size: 16px;
+}
